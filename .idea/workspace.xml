@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d32803c-234a-48cb-882f-a0d913096aa1" name="Default Changelist" comment="" />
+    <list default="true" id="1d32803c-234a-48cb-882f-a0d913096aa1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +21,27 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="develop" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -108,6 +140,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hav2Te0YRsk1EYPi3UEnxllkZa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -123,6 +156,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -142,16 +176,58 @@
       <workItem from="1600261810311" duration="697000" />
       <workItem from="1603367568975" duration="1503000" />
       <workItem from="1603630742923" duration="54000" />
+      <workItem from="1603704191114" duration="6448000" />
+      <workItem from="1603712729652" duration="930000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2059" y="297" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603707502121">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2059" y="297" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603707502121" />
     <state x="2109" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1600269553630">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2109" y="297" width="424" height="484" key="FileChooserDialogImpl/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1600269553630" />
+    <state x="1796" y="228" width="1050" height="622" key="MergeDialog" timestamp="1603724718475">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1796" y="228" width="1050" height="622" key="MergeDialog/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603724718475" />
+    <state x="2108" y="258" width="489" height="561" key="NewPhpClassDialog" timestamp="1603707675441">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2108" y="258" width="489" height="561" key="NewPhpClassDialog/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603707675441" />
+    <state x="1815" y="174" key="SettingsEditor" timestamp="1603710706741">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1815" y="174" key="SettingsEditor/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603710706741" />
+    <state x="1921" y="275" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1603713356420">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1921" y="275" width="800" height="528" key="Vcs.Push.Dialog.v2/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603713356420" />
+    <state x="2051" y="233" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603724714812">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2051" y="233" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603724714812" />
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1603704203655">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup/53.27.1313.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603704203655" />
   </component>
 </project>
