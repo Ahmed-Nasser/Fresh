@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Models\User;
-use App\Traits\FractalBuilder;
 use Illuminate\Http\Response;
+use App\Traits\FractalBuilder;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Resources\UserTransformer;
 use App\Http\Requests\UpdateUserRequest;
+use App\Repository\UserRepositoryInterface;
 
 class UsersController extends Controller
 {
     use FractalBuilder;
+
+    private $repository;
+
+    public function __construct(UserRepositoryInterface $repository)
+    {
+        $this->repository = $repository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -21,9 +28,9 @@ class UsersController extends Controller
     public function index()
     {
         if(request()->has('page') && request('page') == 0){
-            return $this->fractalCollection(User::all(), new UserTransformer());
+            return $this->fractalCollection($this->repository->all(request()->all()), new UserTransformer());
         } else{
-            return $this->fractalCollectionPaginated(User::paginate(request('perPage') ?? 5), new UserTransformer());
+            return $this->fractalCollectionPaginated($this->repository->list(request()->all()), new UserTransformer());
         }
 
     }
@@ -38,13 +45,7 @@ class UsersController extends Controller
     {
         $date = request(['name', 'email', 'password']);
 
-        $user = new User();
-
-        $user->name     = $date['name'];
-        $user->email    = $date['email'];
-        $user->password = $date['password'];
-
-        return ($user->save()) ? json_encode('The user created successfully...'):
+        return ($this->repository->create($date)) ? json_encode('The user created successfully...'):
             json_encode('Something went wrong while creating a new resource.');
     }
 
@@ -56,7 +57,7 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        return $this->fractalItem(User::findOrFail($id), new UserTransformer());
+        return $this->fractalItem($this->repository->find($id), new UserTransformer());
     }
 
     /**
@@ -70,9 +71,7 @@ class UsersController extends Controller
     {
         $date = request(['name', 'email', 'password']);
 
-        $user = User::findOrFail($id);
-
-        return ($user->update($date)) ? json_encode('The user updated successfully...'):
+        return ($this->repository->update($date, $id)) ? json_encode('The user updated successfully...'):
             json_encode('Something went wrong while updating a resource:'.$id.'.');
     }
 
