@@ -17,7 +17,7 @@ trait FractalBuilder
      * @param  mixed              $collection
      * @param  TransformerAbstract $transformer
      * @param  array               $includes
-     * @return \Spatie\Fractalistic\Fractal
+     * @return BaseFractal
      */
     private function fractalCollectionBuilder($collection, TransformerAbstract $transformer, array $includes = []): BaseFractal
     {

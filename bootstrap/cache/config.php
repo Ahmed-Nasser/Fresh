@@ -40,6 +40,7 @@
       23 => 'App\\Providers\\AuthServiceProvider',
       24 => 'App\\Providers\\EventServiceProvider',
       25 => 'App\\Providers\\RouteServiceProvider',
+      26 => 'App\\Providers\\RepositoryServiceProvider',
     ),
     'aliases' => 
     array (
@@ -333,6 +334,18 @@
         'url' => NULL,
         'endpoint' => NULL,
       ),
+    ),
+  ),
+  'fractal' => 
+  array (
+    'default_serializer' => '',
+    'default_paginator' => '',
+    'base_url' => NULL,
+    'fractal_class' => 'Spatie\\Fractal\\Fractal',
+    'auto_includes' => 
+    array (
+      'enabled' => true,
+      'request_key' => 'include',
     ),
   ),
   'hashing' => 
