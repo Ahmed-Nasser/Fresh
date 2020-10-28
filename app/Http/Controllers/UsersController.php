@@ -83,6 +83,7 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return ($this->repository->delete($id)) ? json_encode('The user deleted successfully...'):
+            json_encode('Something went wrong while deleting a resource:'.$id.'.');
     }
 }
