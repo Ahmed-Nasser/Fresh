@@ -52,4 +52,14 @@ class BaseRepository implements EloquentRepositoryInterface
 
         return $model->update($attributes, ['upsert' => true]);
     }
+
+    public function delete($id): int
+    {
+        $model = $this->find($id);
+        if(!$model){
+            return 0;
+        }
+
+        return $model->delete();
+    }
 }
