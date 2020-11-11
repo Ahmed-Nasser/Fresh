@@ -30,4 +30,10 @@ interface EloquentRepositoryInterface
      */
     public function find($id): ?Model;
 
+    /**
+     * @param $id
+     * @return int
+     */
+    public function delete($id): int;
+
 }
